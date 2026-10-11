@@ -1,0 +1,22 @@
+PF2e Flatten - unofficial v14 test candidate
+
+Derived from PF2e Flatten V0.6.2, upstream commit
+14bf3571b3717f5dbe76f81206382a9fdb7dfc3f:
+https://github.com/League-of-Foundry-Developers/pf2e-flatten/
+
+The upstream source states that it modifies the original PF2e Toolbox module.
+The upstream README credits DJphoenix719 and the PF2e Toolbox NPC Flattening
+function:
+https://github.com/Djphoenix719/FVTT-PF2EToolbox/releases
+
+Upstream code and attribution are retained under Apache License 2.0.
+The upstream V0.6.2 distribution contains LICENSE but no NOTICE file.
+This added NOTICE preserves relevant upstream attribution; it does not change
+the license or imply endorsement by either upstream project.
+
+Modified 2026-10-11: bundle.js (v14 directory integration and write guards),
+module.json (unofficial candidate identity, compatibility bounds and candidate
+installation/update URLs), and README.md (current behavior and limitations).
+New CHANGELOG.md, PUBLICATION.md, test fixtures and packaging script document
+and validate this independently modified candidate. LICENSE and lang/en.json
+are unchanged from upstream.
