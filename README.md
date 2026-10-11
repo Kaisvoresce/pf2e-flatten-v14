@@ -1,4 +1,4 @@
-# PF2e Flatten - unofficial v14 test candidate
+# PF2e Flatten — unofficial v14 test candidate
 
 This is an independently modified test candidate derived from PF2e Flatten
 V0.6.2. It is not an official upstream release. The target is Foundry VTT 14.369

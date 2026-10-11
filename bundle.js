@@ -262,7 +262,7 @@ async function unflattenActor(actor) {
 }
 
 async function removeFlatteningModifier(actor) {
-	const slug = pf2eModifierName.replace(lowerCaseThenUpperCaseRE, "$1-$2").toLowerCase().replace(/['']/g, "").replace(nonWordCharacterRE, " ").trim().replace(/[-\s]+/g, "-")
+	const slug = pf2eModifierName.replace(lowerCaseThenUpperCaseRE, "$1-$2").toLowerCase().replace(/['’]/g, "").replace(nonWordCharacterRE, " ").trim().replace(/[-\s]+/g, "-")
 	await actor.removeCustomModifier('all', slug);
 }
 

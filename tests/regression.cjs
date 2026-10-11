@@ -210,7 +210,7 @@ test('manifest retains namespace, uses the candidate channel and makes no verifi
   assert.equal(m.id,'pf2e-flatten');assert.equal(m.compatibility.maximum,'14');assert.equal(m.compatibility.verified,undefined);
   assert.equal(m.url,'https://github.com/Kaisvoresce/pf2e-flatten-v14');
   assert.equal(m.manifest,'https://raw.githubusercontent.com/Kaisvoresce/pf2e-flatten-v14/main/module.json');
-  assert.equal(m.download,'https://github.com/Kaisvoresce/pf2e-flatten-v14/releases/download/v0.6.2-v14.1/pf2e-flatten-0.6.2-v14.1.zip');
+  assert.equal(m.download,'https://github.com/Kaisvoresce/pf2e-flatten-v14/releases/download/v0.6.2-v14.2/pf2e-flatten-0.6.2-v14.2.zip');
   assert.ok(!/setFlag|unsetFlag|flags\./.test(source));
 });
 (async()=>{

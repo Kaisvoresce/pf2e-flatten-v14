@@ -1,5 +1,5 @@
 {
-  "version": "0.6.2-v14.1",
+  "version": "0.6.2-v14.2",
   "title": "PF2e Flatten Proficiency Level bonus for PCs and NPCs (Unofficial v14 test candidate)",
   "id": "pf2e-flatten",
   "description": "Unofficial modified v14 test candidate derived from PF2e Flatten 0.6.2. Runtime compatibility is unverified. Applies the original custom modifier to NPCs and optionally PCs for full or half-level proficiency reduction. See CHANGELOG.md and NOTICE for modification and attribution details.",
@@ -33,5 +33,5 @@
   "license": "LICENSE",
   "url": "https://github.com/Kaisvoresce/pf2e-flatten-v14",
   "manifest": "https://raw.githubusercontent.com/Kaisvoresce/pf2e-flatten-v14/main/module.json",
-  "download": "https://github.com/Kaisvoresce/pf2e-flatten-v14/releases/download/v0.6.2-v14.1/pf2e-flatten-0.6.2-v14.1.zip"
+  "download": "https://github.com/Kaisvoresce/pf2e-flatten-v14/releases/download/v0.6.2-v14.2/pf2e-flatten-0.6.2-v14.2.zip"
 }
