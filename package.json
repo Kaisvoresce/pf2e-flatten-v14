@@ -1,8 +1,8 @@
 {
-  "name": "pf2e-flatten-v14-candidate-tests",
-  "version": "0.6.2-v14.2",
+  "name": "pf2e-flatten-v14-tests",
+  "version": "0.6.5",
   "private": true,
-  "description": "Local fixture checks for an unofficial PF2e Flatten v14 test candidate",
+  "description": "Local fixture checks for the PF2e Flatten v14 continuation",
   "license": "Apache-2.0",
   "scripts": {
     "check": "node --check bundle.js",

@@ -1,4 +1,8 @@
-PF2e Flatten — unofficial v14 test candidate
+PF2e Flatten - v14 continuation
+
+Original PF2e Flatten author: Avery (GitHub velara), named in the original
+module manifest. Upstream history also includes shun17 and Cuingamehtar.
+Current continuation maintainer: David (GitHub Kaisvoresce).
 
 Derived from PF2e Flatten V0.6.2, upstream commit
 14bf3571b3717f5dbe76f81206382a9fdb7dfc3f:
@@ -20,3 +24,10 @@ installation/update URLs), and README.md (current behavior and limitations).
 New CHANGELOG.md, PUBLICATION.md, test fixtures and packaging script document
 and validate this independently modified candidate. LICENSE and lang/en.json
 are unchanged from upstream.
+
+Modified 2026-10-13: module.json (0.6.5 version, maintained continuation
+identity, author attribution, validated compatibility metadata and matching
+release download URL), README.md, CHANGELOG.md and PUBLICATION.md (current
+release status and update instructions), package.json and the manifest
+regression check (matching release metadata). Runtime bundle.js, LICENSE and
+lang/en.json are unchanged from the 0.6.2-v14.2 continuation release.

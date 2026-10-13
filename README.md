@@ -1,12 +1,13 @@
-# PF2e Flatten — unofficial v14 test candidate
+# PF2e Flatten - v14 continuation
 
-This is an independently modified test candidate derived from PF2e Flatten
-V0.6.2. It is not an official upstream release. The target is Foundry VTT 14.369
-with PF2e 8.6.0. **Live runtime compatibility is unverified**; no `verified`
-compatibility claim is included in the manifest.
+Continuation of PF2e Flatten by Avery (velara), maintained by David
+(Kaisvoresce). Version 0.6.5 derives from upstream V0.6.2 and the v14
+continuation work. Live validation passed on Foundry VTT 14.369 with PF2e
+8.6.0; the manifest records those verified versions. Compatibility beyond
+the declared bounds has not been established.
 
 The upstream module applies full or half-level proficiency reduction through
-a PF2e custom modifier. This candidate updates directory integration for v14
+a PF2e custom modifier. This continuation updates directory integration for v14
 and adds guards for duplicate calls and overlapping automatic writes while
 retaining the original calculation, settings and actor-data contract.
 
@@ -51,7 +52,7 @@ Late level changes are reconciled with a five-cycle limit and a removal-progress
 check. Unflatten remains removal-only.
 
 PF2e Toolbox actors use a separate legacy format. Unflatten them with the
-original Toolbox before switching; this candidate adds no guessed legacy
+original Toolbox before switching; this continuation adds no guessed legacy
 flag migration.
 
 ## Testing and installation
@@ -69,25 +70,30 @@ node --check bundle.js
 node tests/regression.cjs
 ```
 
-The public staging suite contains 25 focused tests using authored API/DOM
+The repository suite contains 25 focused tests using authored API/DOM
 simulations. It does not run Foundry, real prepared statistics, full PF2e
 Modifier serialization, migration, compendium/token roundtrips or multiple
-live clients. Those runtime checks remain necessary before a verified claim.
+live clients. The owner separately completed live validation before the
+0.6.5 release; the fixtures remain useful regression checks.
 
-For direct installation of this test candidate, use the maintained manifest URL
+For direct installation, use the maintained manifest URL
 in Foundry's Install Module dialog:
 
 https://raw.githubusercontent.com/Kaisvoresce/pf2e-flatten-v14/main/module.json
 
-The manifest points to a versioned release ZIP and also serves as the candidate
-update channel. Installation availability is separate from live compatibility:
-this remains an unverified test build for a disposable world.
-See PUBLICATION.md for the release process.
+The manifest points to a versioned release ZIP and serves as the update channel.
+Use this continuation's manifest URL for updates. An installation still using
+the League upstream manifest will continue checking the upstream channel;
+changing the public repository cannot retarget that local installation.
+GitHub source archives contain repository tooling and are not the installable
+release ZIP. See PUBLICATION.md for the release process.
 
 ## License and attribution
 
-Distributed under Apache License 2.0; see LICENSE and NOTICE. This work derives
-from the League of Foundry Developers' PF2e Flatten project:
+Distributed under Apache License 2.0; see LICENSE and NOTICE. Original PF2e
+Flatten author: Avery (GitHub velara). Current continuation maintainer: David
+(GitHub Kaisvoresce). This work derives from the League of Foundry Developers'
+PF2e Flatten project, whose history also includes shun17 and Cuingamehtar:
 https://github.com/League-of-Foundry-Developers/pf2e-flatten/
 
 The original module overhauled the NPC Flattening function from PF2e Toolbox

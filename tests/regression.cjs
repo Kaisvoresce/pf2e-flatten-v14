@@ -205,12 +205,14 @@ test('v14 header-part fallback inserts buttons', async () => {
   await e.fire('renderActorDirectory',{}, {querySelector:s=>s.includes('data-application-part')?{append:x=>rows.push(x)}:null}, {});
   assert.equal(rows.length,1);
 });
-test('manifest retains namespace, uses the candidate channel and makes no verified claim', () => {
+test('manifest retains namespace and serves the matching maintained release', () => {
   const m=JSON.parse(fs.readFileSync(path.join(root,'module.json'),'utf8'));
-  assert.equal(m.id,'pf2e-flatten');assert.equal(m.compatibility.maximum,'14');assert.equal(m.compatibility.verified,undefined);
+  assert.equal(m.id,'pf2e-flatten');assert.equal(m.compatibility.maximum,'14');assert.equal(m.compatibility.verified,'14.369');
+  assert.equal(m.version,'0.6.5');
+  assert.equal(m.relationships.systems[0].compatibility.verified,'8.6.0');
   assert.equal(m.url,'https://github.com/Kaisvoresce/pf2e-flatten-v14');
   assert.equal(m.manifest,'https://raw.githubusercontent.com/Kaisvoresce/pf2e-flatten-v14/main/module.json');
-  assert.equal(m.download,'https://github.com/Kaisvoresce/pf2e-flatten-v14/releases/download/v0.6.2-v14.2/pf2e-flatten-0.6.2-v14.2.zip');
+  assert.equal(m.download,'https://github.com/Kaisvoresce/pf2e-flatten-v14/releases/download/v0.6.5/pf2e-flatten-0.6.5.zip');
   assert.ok(!/setFlag|unsetFlag|flags\./.test(source));
 });
 (async()=>{
